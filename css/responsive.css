@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 836px) and (orientation: landscape) {
 
-    .mobile-landscape { display: none; }
+    .mobile { display: none; }
 
     /*.services { bottom: 100px; }*/
 
