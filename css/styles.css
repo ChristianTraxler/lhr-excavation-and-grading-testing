@@ -169,10 +169,94 @@ ul.jobs {
     font-size: 18px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Home page */
+
+.slideshow {
+    padding-top: 50px;
+}
+
+.w3-content {
+    margin: auto;
+    /*padding-top: 50px;*/
+    width: 90%;
+}
+
+img[src*="IMG_8742"], img[src*="IMG_8743"], img[src*="IMG_8744"] {
+    border-radius: 10px;
+}
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+    top: 60%;
+}
+
+.w3-display-left {
+    position: absolute;
+    top: 60% !important;
+    left: 0;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+
+.w3-display-right {
+    position: absolute;
+    top: 60% !important;
+    right: 0;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+
+
+
+/* End of Home page */
+
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Start of Before & After page */
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    text-align: left;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    /*color: #0275d8;*/
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.active {
+    color: #0275d8;
+}
+
+.not-active { color: gray; }
 
 .before-after {
     display: grid;
