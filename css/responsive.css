@@ -7,6 +7,13 @@
 
     /*.services { bottom: 100px; }*/
 
+    /* Start of Before & After page */
+
+    /*.before-wrapper, .after-wrapper { padding: initial; }*/
+
+
+    /* End of Before & After page */
+
     /*footer .footer-top { padding-top: 85px; }*/
 }
 
@@ -16,15 +23,17 @@
 
     /*.services { bottom: 100px; }*/
 
-    .before > h3 {
-        top: 165px;
-        left: 473px;
-    }
+    /*.before > h3 {*/
+    /*    top: 165px;*/
+    /*    left: 473px;*/
+    /*}*/
 
-    .after > h3 {
-        top: 170px;
-        left: 150px;
-    }
+    /*.after > h3 {*/
+    /*    top: 170px;*/
+    /*    left: 150px;*/
+    /*}*/
+
+    /*.before-wrapper, .after-wrapper { padding: initial; }*/
 
     /*footer .footer-top { padding-top: 85px; }*/
 }

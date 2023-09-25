@@ -240,7 +240,7 @@ img[src*="IMG_1226"] {
     margin: auto;
     width: 100%;
     max-width: 1200px;
-    padding: 10px 30px;
+    /*padding: 10px 30px;*/
     /*position: relative;*/
 }
 
