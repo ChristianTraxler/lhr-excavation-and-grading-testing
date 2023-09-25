@@ -1,0 +1,65 @@
+body, html {
+    height: 100%
+}
+
+.bgimg {
+    background-image:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.7)
+            ),
+            url('../assets/images/144080.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+/* Position text in the top-left corner */
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+img[src*="LHR-logo(white"] { width: 30%; }
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.construction {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Position text in the middle */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle > p {
+    padding-top: 20px;
+    /*font-weight: bolder;*/
+}
+
+/* Style the <hr> element */
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+/*h1 {*/
+/*    color: black;*/
+/*}*/

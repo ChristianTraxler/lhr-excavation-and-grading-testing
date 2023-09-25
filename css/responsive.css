@@ -1,0 +1,205 @@
+/* --------------- Start of Tablet responsiveness --------------- */
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+
+    .mobile-landscape { display: none; }
+
+    /*.services { bottom: 100px; }*/
+
+    .before > h3 {
+        top: 208px;
+        left: 687px;
+    }
+
+    .after > h3 {
+        top: 220px;
+        left: 215px;
+    }
+
+    /*footer .footer-top { padding-top: 85px; }*/
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+    .mobile-landscape { display: none; }
+
+    /*.services { bottom: 100px; }*/
+
+    .before > h3 {
+        top: 165px;
+        left: 473px;
+    }
+
+    .after > h3 {
+        top: 170px;
+        left: 150px;
+    }
+
+    /*footer .footer-top { padding-top: 85px; }*/
+}
+
+@media screen and (max-width: 768px) {
+
+    img[src*="DOC"] { width: 4%; }
+}
+
+@media screen and (min-width: 667px) and (max-width: 736px) {
+
+    /* Start of Header section */
+
+    video { display: none; }
+
+    .mobile-landscape { display: initial; }
+
+
+    /* End of Header section */
+
+
+    /* Start of Footer section */
+
+    img[src*="DOC"] {
+        width: 4%;
+        /*top: 9px;*/
+    }
+
+    /* End of Footer section */
+
+}
+
+/* --------------- End of Tablet responsiveness --------------- */
+
+/* --------------- Start of Mobile responsiveness --------------- */
+
+@media screen and (max-width: 836px) and (orientation: landscape) {
+
+    .mobile-landscape { display: none; }
+
+    /*.services { bottom: 100px; }*/
+
+    .before > h3 {
+        top: 183px;
+        left: 544px;
+    }
+
+    .after > h3 {
+        top: 180px;
+        left: 166px;
+    }
+
+    /*footer .footer-top { padding-top: 85px; }*/
+}
+
+@media screen and (min-width: 766px) and (max-width: 832px) and (orientation: landscape) {
+
+    /*video { display: none; }*/
+    .mobile-landscape { display: initial; }
+
+    .services-container > p, ul.jobs { font-size: 16px; }
+}
+
+@media screen and (min-width: 567px) and (max-width: 665px) and (orientation: landscape) {
+
+    /*video, .desktop { display: none; }*/
+
+    .mobile { display: none; }
+
+    .mobile-landscape { display: initial; }
+
+    img[src*="DOC"] {
+        width: 5%;
+        /*top: 9px;*/
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    /* Coming Soon page */
+
+    img[src*="LHR-logo(white)"] { width: 20%;}
+
+    .middle > .construction > h1 { font-size: 40px; }
+
+    .middle {
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        transform: initial;
+        left: initial;
+    }
+
+    .middle > p { padding: 20px 15px; }
+
+
+    /* End of Coming Soon page */
+
+
+    .container { grid-template-rows: 60px 233px auto auto; }
+
+    .welcome { bottom: initial; }
+
+    .services {
+        /*padding-bottom: 250px;*/
+        bottom: 5px;
+    }
+
+    .before-after-area {
+        padding-bottom: 250px;
+        bottom: 5px;
+    }
+
+    .services-container { padding-bottom: 100px; }
+
+    .desktop { bottom: initial; }
+
+    .mobile-landscape { display: none; }
+
+    .mobile { display: initial; }
+
+    .before-after { padding: 10px 20px; }
+
+    .before-wrapper, .after-wrapper {
+        display: initial;
+        padding: initial;
+    }
+
+    img[src*="DOC"] {
+        width: 6%;
+        /*top: 7px;*/
+    }
+
+    /* Start of Before & After page */
+
+
+
+    .before-after {
+        grid-template-columns: initial;
+        gap: 10%;
+    }
+
+    .card { width: initial; }
+
+    /*.lightbox > img[src*="IMG_8742"] {*/
+    /*    width: initial;*/
+    /*    margin: initial;*/
+    /*}*/
+
+    /* End of Before & After page */
+}
+
+@media screen and (max-width: 400px) {
+
+    .container { grid-template-rows: 60px 221px auto auto; }
+
+    /*.before-after { padding: 10px 20px; }*/
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .container { grid-template-rows: 60px 211px auto auto; }
+
+    /*img[src*="DOC"] { top: 6px; }*/
+}
+
+/* --------------- End of Mobile responsiveness --------------- */

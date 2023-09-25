@@ -1,0 +1,666 @@
+body {
+    background-color: #2D2F31;
+}
+
+.container {
+    display: grid;
+    position: relative;
+    /*max-width: 900px;*/
+    /*margin: auto;*/
+    grid-template-areas: "nav nav"
+    "header header"
+    "welcome welcome"
+    "services services"
+    "before-after-area before-after-area"
+    "footer footer";
+    grid-template-rows: 60px auto auto auto auto;
+    grid-template-columns: 1fr 3fr;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+header {
+    grid-area: header;
+    background-color: #2D2F31;
+}
+
+header > video {
+    position: relative;
+    bottom: 100px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #2D2F31;
+    z-index: 1;
+}
+
+nav > ul > li { display: block; }
+
+nav > ul > li > a {
+    color: #C0C2C3;
+    text-decoration: none;
+}
+
+/*ul {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    text-align: center;*/
+/*    padding: 0;*/
+/*}*/
+
+/*ul > li {*/
+/*    display: block;*/
+/*}*/
+
+.before-after-link {
+    padding: 8px 20px 0 20px;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.contact {
+    padding: 21px 20px;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+img[src*="LHR-Grading(2)"] {
+    width: 80px;
+    padding: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.desktop {
+    position: relative;
+    bottom: 120px;
+}
+
+.mobile-landscape {
+    display: none;
+}
+
+.info {
+    grid-area: info;
+    background-color: brown;
+}
+
+.welcome {
+    grid-area: welcome;
+    background-color: orangered;
+    position: relative;
+    bottom: 150px;
+}
+
+.welcome > h1 {
+    padding: 60px 0;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.welcome > p {
+    text-align: left;
+    padding: 0 20px 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-indent: 50px;
+}
+
+.services {
+    grid-area: services;
+    background-color: orangered;
+    position: relative;
+    bottom: 150px;
+}
+
+.services > h1 {
+    padding: 60px 0;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.services, .before-after-area > h1 {
+    padding: 100px 0 50px 0;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.services, .before-after-area > div > h1 {
+    padding: 60px 0;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.services-container { padding-bottom: 40px; }
+
+.services-container > p {
+    text-align: left;
+    padding: 0 20px 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-indent: 50px;
+}
+
+.before-after-area {
+    grid-area: before-after-area;
+    background-color: orangered;
+    position: relative;
+    bottom: 150px;
+    padding-bottom: 150px;
+}
+
+/*div > ul { display: inline-block; }*/
+
+/*div > ul.jobs {*/
+/*    !*display: block;*!*/
+/*    list-style-type: disc;*/
+/*}*/
+
+ul.jobs {
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Before & After page */
+
+.before-after {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+}
+
+.card {
+    margin: 0 auto;
+    padding: 15px 10px 0 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.before, .after > h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.before {
+    /*display: grid;*/
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 50%);
+    /*border: solid 2px yellow;*/
+}
+
+.before > h3 {
+    position: relative;
+    /*text-align: right;*/
+    /*top: 250px;*/
+    /*left: 800px;*/
+    /*width: 8%;*/
+    overflow-wrap: initial;
+}
+
+img[src*="IMG_8742"] {
+    display: flex;
+    /* padding: 40px; */
+    margin: auto;
+    /* -webkit-filter: drop-shadow(5px 5px 5px #222); */
+    /* filter: drop-shadow(5px 5px 5px #222); */
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+img[src*="IMG_1226"] {
+    display: flex;
+    position: relative;
+    /*padding: 40px;*/
+    margin: 0;
+    border-radius: 10px;
+    /*left: 100%;*/
+    /*-webkit-filter: drop-shadow(5px 5px 5px #222);*/
+    /*filter: drop-shadow(5px 5px 5px #222);*/
+}
+
+.before-wrapper, .after-wrapper {
+    display: grid;
+    /*grid-template-rows: repeat(1, 1fr);*/
+    /*grid-template-columns: repeat(2, 50%);*/
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 30px;
+    /*position: relative;*/
+}
+
+.after {
+    /*display: grid;*/
+    /*grid-template-rows: repeat(1, 1fr);*/
+    /*grid-template-columns: repeat(2, 35%);*/
+    /*justify-content: center;*/
+    /*padding-top: 60px;*/
+    /*border: solid 2px white;*/
+}
+
+.after > h3 {
+    position: relative;
+    text-align: left;
+    top: 250px;
+    left: 300px;
+    width: 10%;
+    overflow-wrap: initial;
+    font-size: 40px;
+}
+
+
+
+
+/* End of Before & After page */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Contact page */
+
+.contact> h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+
+
+/* End of Contact page */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Footer */
+
+footer {
+    grid-area: footer;
+    background-color: #2D2F31;
+}
+
+.bg-footer {
+    position: relative;
+    bottom: 80px;
+}
+
+/*footer.bg-footer { background-color: var(--footer); }*/
+
+/*footer .footer-bottom { background-color: var(--footer-base); }*/
+
+footer .footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--size-50);
+    /*padding: var(--size-50) 0;*/
+    padding-top: 60px;
+}
+
+footer .footer-col {
+    justify-self: center;
+    max-width: 269px;
+}
+
+.footer-top h4 {
+    color: var(--white);
+    font-weight: 500;
+    margin-bottom: var(--size-16);
+    font-size: var(--size-18);
+}
+
+.footer-top h5 {
+    color: var(--white);
+    font-weight: 500;
+    margin-bottom: var(--size-16);
+    font-size: var(--size-14);
+}
+
+.inside {
+    position: relative;
+    left: 30px;
+}
+
+.contact-info li {
+    display: flex;
+    color: var(--white);
+    margin-bottom: var(--size-14);
+}
+
+.contact-info li i { padding-right: var(--size-10); }
+
+.contact-info > ul { display: initial; }
+
+.social-icons ul li {
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    margin: 13px;
+}
+
+.icons {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding-right: var(--size-10);
+}
+
+.phone {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.services-wrapper p {
+    color: #858497;
+    line-height: var(--size-20);
+}
+
+.services-wrapper h5 { margin-bottom: 5px; }
+
+.recent-posts {
+    display: flex;
+    margin-bottom: var(--size-16);
+}
+
+.recent-posts .post-img-wrapper {
+    width: var(--size-100);
+    margin-right: var(--size-10);
+}
+
+.post-inner h6 {
+    margin: 0;
+    line-height: var(--size-20);
+}
+
+.post-inner h6 a {
+    color: var(--white);
+    font-weight: 600;
+    margin-right: -9.375rem;
+    font-size: 0.75rem;
+    line-height: var(--size-16);
+}
+
+.post-inner span {
+    color: var(--font-color-light);
+    font-size: var(--size-10);
+}
+
+.footer-bottom {
+    padding: var(--size-16) 0;
+    text-align: center;
+}
+
+.footer-bottom-wrapper {
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px; }
+
+.developer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    pointer-events: none;
+    /*right: 12px;*/
+    text-decoration: none;
+    color: #FF4500;
+}
+
+.developer > span { color: white; }
+
+.developer > .dev {
+    pointer-events: initial;
+    color: #FF4500;
+}
+
+.copyright p { color: var(--white); }
+
+/*.footer-bottom-links {*/
+/*  margin-top: var(--size-10);*/
+/*  padding-left: 10px;*/
+/*}*/
+
+.footer-bottom-links ul li {
+    display: inline-block;
+    margin-right: var(--size-10);
+    color: var(--white);
+}
+
+.footer-bottom-links ul li a { color: var(--white); }
+
+img[src*="mail"] {
+    display: initial;
+    position: relative;
+    right: 4px;
+    bottom: 4px;
+}
+
+.email {
+    text-decoration: none;
+    color: var(--white);
+}
+
+img[src*="mobile"] {
+    display: initial;
+    position: relative;
+    right: 4px;
+    bottom: 4px;
+}
+
+.tel {
+    text-decoration: none;
+    color: white;
+}
+
+img[src*="DOC"] {
+    display: initial;
+    position: relative;
+    width: 3%;
+}
+
+/* End of Footer */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Scroll-top section */
+
+.arrow {
+    display: inline-block;
+    width: 70%;
+}
+
+#scrollUp {
+    background-color: transparent;
+    background-image: linear-gradient(
+            90deg, #9ccdfe 0%, #94aafd 100%);
+    color: var(--white);
+    font-size: var(--size-20);
+    height: var(--size-30);
+    width: var(--size-30);
+    line-height: var(--size-25);
+    position: fixed;
+    bottom: var(--size-18);
+    right: var(--size-30);
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* End of Scroll-Top section */
+
+
+
+
+/*Eliminates padding, centers the thumbnail */
+
+body, html {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Styles the thumbnail */
+
+/*a.lightbox img {*/
+/*    height: 150px;*/
+/*    !*border: 3px solid white;*!*/
+/*    !*box-shadow: 0px 0px 8px rgba(0,0,0,.3);*!*/
+/*    margin: 94px 20px 20px 20px;*/
+/*}*/
+
+/*.lightbox > img[src*="IMG_8742"] {*/
+/*    width: 45%;*/
+/*    margin: 0 5%;*/
+/*}*/
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    max-height: 0%;
+    max-width: 0%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+    display: block;
+    width:50px;
+    height:50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    overflow:scroll;
+}
+
+.lightbox-target:target img {
+    max-height: 100%;
+    max-width: 80%;
+}
+
+.lightbox-target:target a.lightbox-close {
+    top: 0;
+}
+
+
+
+
+
+/* ----------------- Testing ------------------ */
+
+/*.parallax {*/
+/*    !* The image used *!*/
+/*    background-image: url("assets/images/before/IMG_8742.JPG");*/
+
+/*    !* Set a specific height *!*/
+/*    min-height: 500px;*/
+
+/*    !* Create the parallax scrolling effect *!*/
+/*    background-attachment: fixed;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+.commonninja-ribbon-link {
+    display: none !important;
+}
+
