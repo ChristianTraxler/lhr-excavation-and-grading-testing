@@ -152,6 +152,16 @@
 
     /* End of Coming Soon page */
 
+    /* Start of Home page */
+
+    .mySlides { width: 100% !important; }
+
+    .w3-display-left { left: 0 !important; }
+    .w3-display-right { right: 0 !important; }
+
+
+    /* End of Home page */
+
 
     .container { grid-template-rows: 60px 233px auto auto; }
 
