@@ -195,7 +195,7 @@ img[src*="IMG_8742"], img[src*="IMG_8743"], img[src*="IMG_8744"] {
 
 .w3-display-left {
     position: absolute;
-    top: 60% !important;
+    top: 50% !important;
     left: 0;
     transform: translate(0%,-50%);
     -ms-transform: translate(-0%,-50%);
@@ -203,7 +203,7 @@ img[src*="IMG_8742"], img[src*="IMG_8743"], img[src*="IMG_8744"] {
 
 .w3-display-right {
     position: absolute;
-    top: 60% !important;
+    top: 50% !important;
     right: 0;
     transform: translate(0%,-50%);
     -ms-transform: translate(-0%,-50%);
@@ -212,6 +212,20 @@ img[src*="IMG_8742"], img[src*="IMG_8743"], img[src*="IMG_8744"] {
 
 
 /* End of Home page */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Projects page */
+
+.w3-content > .mySlides {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+/* End of Projects page *?
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
