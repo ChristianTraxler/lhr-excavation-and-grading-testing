@@ -223,6 +223,13 @@ img[src*="IMG_8742"], img[src*="IMG_8743"], img[src*="IMG_8744"] {
     border-radius: 10px;
 }
 
+img[src*="IMG_0544"], img[src*="IMG_6590"] {
+    display: flex;
+    position: relative;
+    margin: 0;
+    border-radius: 10px;
+}
+
 
 
 
