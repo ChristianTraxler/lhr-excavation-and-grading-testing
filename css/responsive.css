@@ -2,19 +2,10 @@
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 
-    .mobile-landscape { display: none; }
+    .mobile { display: none; }
+    .mobile-landscape {display: initial; }
 
     /*.services { bottom: 100px; }*/
-
-    .before > h3 {
-        top: 208px;
-        left: 687px;
-    }
-
-    .after > h3 {
-        top: 220px;
-        left: 215px;
-    }
 
     /*footer .footer-top { padding-top: 85px; }*/
 }
@@ -41,6 +32,13 @@
 @media screen and (max-width: 768px) {
 
     img[src*="DOC"] { width: 4%; }
+
+    .before-wrapper, .after-wrapper { padding: initial; }
+
+    .before > h3 {
+        top: initial;
+        left: initial;
+    }
 }
 
 @media screen and (min-width: 667px) and (max-width: 736px) {
@@ -53,6 +51,18 @@
 
 
     /* End of Header section */
+
+    /* Start of Before & After page */
+
+    /*.before-wrapper, .after-wrapper { padding: initial; }*/
+
+    .before > h3 {
+        top: initial;
+        left: initial;
+    }
+
+
+    /* End of Before & After page */
 
 
     /* Start of Footer section */
@@ -76,15 +86,15 @@
 
     /*.services { bottom: 100px; }*/
 
-    .before > h3 {
-        top: 183px;
-        left: 544px;
-    }
+    /*.before > h3 {*/
+    /*    top: 183px;*/
+    /*    left: 544px;*/
+    /*}*/
 
-    .after > h3 {
-        top: 180px;
-        left: 166px;
-    }
+    /*.after > h3 {*/
+    /*    top: 180px;*/
+    /*    left: 166px;*/
+    /*}*/
 
     /*footer .footer-top { padding-top: 85px; }*/
 }
