@@ -384,6 +384,16 @@ img[src*="IMG_1226"] {
     font-family: 'Black Ops One', sans-serif;
 }
 
+.contact-2 {
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+.contact-2 > p > a {
+    color: black;
+}
+
+.contact-2 > .tel { color: black; }
 
 
 /* End of Contact page */

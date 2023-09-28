@@ -214,6 +214,16 @@
     /*}*/
 
     /* End of Before & After page */
+
+    /* Start of Contact page */
+
+    .contact-2 { padding-bottom: 100px; }
+
+
+
+
+
+    /* End of Contact page */
 }
 
 @media screen and (max-width: 400px) {
