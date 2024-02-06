@@ -185,7 +185,7 @@
 
     .mobile { display: initial; }
 
-    .before-after { padding: 10px 20px; }
+    /*.before-after { padding: 10px 20px; }*/
 
     .before-wrapper, .after-wrapper {
         display: initial;
@@ -203,7 +203,8 @@
 
     .before-after {
         grid-template-columns: initial;
-        gap: 10%;
+        grid-row-gap: 2%;
+        padding: 10px 10px 100px 10px;
     }
 
     .card { width: initial; }

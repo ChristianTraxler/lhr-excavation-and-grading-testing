@@ -282,8 +282,10 @@ ul.breadcrumb li a:hover {
 
 .before-after {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-
+    grid-template-columns: repeat(2, 30%);
+    grid-row-gap: 5%;
+    margin: auto;
+    justify-content: center;
 }
 
 .card {
@@ -369,6 +371,18 @@ img[src*="IMG_1226"] {
     font-size: 40px;
 }
 
+/* Start of Before & After page */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Stump & Tree Removal page */
+
+.removal-container { padding: 10px 10px 100px 10px; }
+
+
+
+
+/* End of Stump & Removal page */
 
 
 
