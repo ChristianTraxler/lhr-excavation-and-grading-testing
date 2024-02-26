@@ -233,7 +233,7 @@ img[src*="IMG_0544"], img[src*="IMG_6590"], img[src*="IMG_3199"], img[src*="conc
 
 
 
-/* End of Projects page *?
+/* End of Projects page */
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -282,7 +282,7 @@ ul.breadcrumb li a:hover {
 
 .before-after {
     display: grid;
-    grid-template-columns: repeat(2, 30%);
+    grid-template-columns: repeat(2, 35%);
     grid-row-gap: 5%;
     margin: auto;
     justify-content: center;
@@ -294,7 +294,7 @@ ul.breadcrumb li a:hover {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     border-radius: 10px;
-    width: 70%;
+    width: 90%;
 }
 
 .before, .after > h3 {
@@ -377,7 +377,11 @@ img[src*="IMG_1226"] {
 
 /* Start of Stump & Tree Removal page */
 
-.removal-container { padding: 10px 10px 100px 10px; }
+.removal-container {
+    display: grid;
+    padding: 10px 10px 100px 10px;
+    grid-row-gap: 5%;
+}
 
 
 
