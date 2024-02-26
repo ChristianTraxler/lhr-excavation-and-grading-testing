@@ -223,7 +223,7 @@ img[src*="IMG_8742"], img[src*="IMG_8743"], img[src*="IMG_8744"] {
     border-radius: 10px;
 }
 
-img[src*="IMG_0544"], img[src*="IMG_6590"] {
+img[src*="IMG_0544"], img[src*="IMG_6590"], img[src*="IMG_3199"], img[src*="concrete-pad"] {
     display: flex;
     position: relative;
     margin: 0;
@@ -387,6 +387,30 @@ img[src*="IMG_1226"] {
 
 
 /* End of Before & After page */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* Start of Concrete Pad Leveling page */
+
+.cpl-container {
+    display: grid;
+    /*grid-template-columns: repeat(2, 30%);*/
+    grid-row-gap: 5%;
+    margin: auto;
+    justify-content: center;
+}
+
+.cpl-card {
+    margin: 0 auto;
+    padding: 15px 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* End of Concrete Pad Leveling page */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
