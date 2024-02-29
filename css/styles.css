@@ -177,6 +177,10 @@ ul.jobs {
     padding-top: 50px;
 }
 
+.slideshow > h1 {
+    text-align: center;
+}
+
 .w3-content {
     margin: auto;
     /*padding-top: 50px;*/
@@ -651,6 +655,12 @@ img[src*="DOC"] {
     width: 70%;
     position: relative;
     top: 4px;
+}
+
+.arrow2 {
+    display: inline-block;
+    width: 70%;
+    position: relative;
 }
 
 #scrollUp {
