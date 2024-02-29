@@ -223,7 +223,8 @@ img[src*="IMG_8742"], img[src*="IMG_8743"], img[src*="IMG_8744"] {
     border-radius: 10px;
 }
 
-img[src*="IMG_0544"], img[src*="IMG_6590"], img[src*="IMG_3199"], img[src*="concrete-pad"], img[src*="IMG_0672"] {
+img[src*="IMG_0544"], img[src*="IMG_6590"], img[src*="IMG_3199"], img[src*="concrete-pad"], img[src*="IMG_0672"],
+img[src*="IMG_0667"], img[src*="IMG_0670"], img[src*="IMG_0668"], img[src*="IMG_0671"] {
     display: flex;
     position: relative;
     margin: 0;
