@@ -213,7 +213,16 @@ img[src*="IMG_8742"], img[src*="IMG_8743"], img[src*="IMG_8744"] {
     -ms-transform: translate(-0%,-50%);
 }
 
+.photos {
+    display: flex;
+    padding: 20px;
+}
 
+img[src*="_DSC4266"], img[src*="_DSC4279"] {
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+}
 
 /* End of Home page */
 
