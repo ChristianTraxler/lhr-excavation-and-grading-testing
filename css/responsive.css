@@ -197,6 +197,17 @@
         /*top: 7px;*/
     }
 
+    .photos {
+        display: grid;
+        padding: 20px;
+    }
+
+    img[src*="DSC4266"], img[src*="DSC4279"] {
+        width: 100%;
+        margin: auto;
+        padding: 1%;
+    }
+
     /* Start of Before & After page */
 
 
