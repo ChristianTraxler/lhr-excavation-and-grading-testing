@@ -1,46 +1,85 @@
-/* --------------- Start of Tablet responsiveness --------------- */
+/* ========================================
+   TABLET (1024px and below)
+   ======================================== */
+
+@media screen and (max-width: 1024px) {
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .welcome-grid {
+        gap: 40px;
+    }
+}
+
+/* ========================================
+   TABLET LANDSCAPE
+   ======================================== */
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 
     .mobile { display: none; }
-    .mobile-landscape {display: initial; }
+    .mobile-landscape { display: initial; }
 
-    /*.services { bottom: 100px; }*/
-
-    /* Start of Before & After page */
-
-    /*.before-wrapper, .after-wrapper { padding: initial; }*/
-
-
-    /* End of Before & After page */
-
-    /*footer .footer-top { padding-top: 85px; }*/
+    header > img.mobile-landscape {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-
     .mobile-landscape { display: none; }
-
-    /*.services { bottom: 100px; }*/
-
-    /*.before > h3 {*/
-    /*    top: 165px;*/
-    /*    left: 473px;*/
-    /*}*/
-
-    /*.after > h3 {*/
-    /*    top: 170px;*/
-    /*    left: 150px;*/
-    /*}*/
-
-    /*.before-wrapper, .after-wrapper { padding: initial; }*/
-
-    /*footer .footer-top { padding-top: 85px; }*/
 }
+
+
+/* ========================================
+   TABLET PORTRAIT (768px and below)
+   ======================================== */
 
 @media screen and (max-width: 768px) {
 
-    img[src*="DOC"] { width: 4%; }
+    .welcome {
+        padding: 80px 24px 60px;
+    }
+
+    .welcome-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .photos {
+        order: -1;
+    }
+
+    .photos img:first-child {
+        margin-top: 0;
+    }
+
+    .services {
+        padding: 80px 24px 100px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .service-card {
+        padding: 22px 18px;
+    }
+
+    .image-break {
+        height: 40vh;
+        min-height: 280px;
+    }
+
+    .cta-section {
+        padding: 80px 24px;
+    }
 
     .before-wrapper, .after-wrapper { padding: initial; }
 
@@ -48,94 +87,77 @@
         top: initial;
         left: initial;
     }
-}
 
-@media screen and (min-width: 667px) and (max-width: 736px) {
+    img[src*="DOC"] { width: 18px; height: 18px; }
 
-    /* Start of Header section */
-
-    video { display: none; }
-
-    .mobile-landscape { display: initial; }
-
-
-    /* End of Header section */
-
-    /* Start of Before & After page */
-
-    /*.before-wrapper, .after-wrapper { padding: initial; }*/
-
-    .before > h3 {
-        top: initial;
-        left: initial;
+    .before-after {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
-
-    /* End of Before & After page */
-
-
-    /* Start of Footer section */
-
-    img[src*="DOC"] {
-        width: 4%;
-        /*top: 9px;*/
+    .projects-wrapper {
+        padding: 0 16px 40px 16px;
     }
 
-    /* End of Footer section */
-
+    .card { width: initial; }
+    .card2 { height: initial; }
 }
 
-/* --------------- End of Tablet responsiveness --------------- */
 
-/* --------------- Start of Mobile responsiveness --------------- */
+/* ========================================
+   MOBILE LANDSCAPE
+   ======================================== */
 
 @media screen and (max-width: 836px) and (orientation: landscape) {
-
     .mobile { display: none; }
-
-    /*.services { bottom: 100px; }*/
-
-    /*.before > h3 {*/
-    /*    top: 183px;*/
-    /*    left: 544px;*/
-    /*}*/
-
-    /*.after > h3 {*/
-    /*    top: 180px;*/
-    /*    left: 166px;*/
-    /*}*/
-
-    /*footer .footer-top { padding-top: 85px; }*/
 }
 
 @media screen and (min-width: 766px) and (max-width: 832px) and (orientation: landscape) {
-
-    /*video { display: none; }*/
     .mobile-landscape { display: initial; }
 
-    .services-container > p, ul.jobs { font-size: 16px; }
-}
-
-@media screen and (min-width: 567px) and (max-width: 665px) and (orientation: landscape) {
-
-    /*video, .desktop { display: none; }*/
-
-    .mobile { display: none; }
-
-    .mobile-landscape { display: initial; }
-
-    img[src*="DOC"] {
-        width: 5%;
-        /*top: 9px;*/
+    header > img.mobile-landscape {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
+@media screen and (min-width: 667px) and (max-width: 736px) and (orientation: landscape) {
+    .mobile-landscape { display: initial; }
+
+    header > img.mobile-landscape {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 567px) and (max-width: 665px) and (orientation: landscape) {
+    .mobile { display: none; }
+    .mobile-landscape { display: initial; }
+
+    header > img.mobile-landscape {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/* ========================================
+   MOBILE (480px and below)
+   ======================================== */
 
 @media screen and (max-width: 480px) {
 
     /* Coming Soon page */
-
-    img[src*="LHR-logo(white)"] { width: 20%;}
+    img[src*="LHR-logo(white)"] { width: 20%; }
 
     .middle > .construction > h1 { font-size: 40px; }
 
@@ -149,110 +171,148 @@
 
     .middle > p { padding: 20px 15px; }
 
+    /* Nav */
+    .navbar-nav { height: 60px; }
 
-    /* End of Coming Soon page */
-
-    /* Start of Home page */
-
-    .mySlides { width: 100% !important; }
-
-    .w3-display-left { left: 0 !important; }
-    .w3-display-right { right: 0 !important; }
-
-
-    /* End of Home page */
-
-
-    .container { grid-template-rows: 60px 233px auto auto; }
-
-    .welcome { bottom: initial; }
-
-    .services {
-        /*padding-bottom: 250px;*/
-        bottom: 5px;
+    .contact {
+        padding: 16px 20px;
+        font-size: 1rem;
+        letter-spacing: 1px;
     }
 
-    .before-after-area {
-        padding-bottom: 250px;
-        bottom: 5px;
+    img[src*="LHR-Grading(2)"] { width: 45px; }
+
+    /* Hero */
+    header {
+        height: 85vh;
+        min-height: 500px;
     }
 
-    .services-container { padding-bottom: 100px; }
+    .hero-overlay {
+        bottom: 12%;
+    }
 
-    .desktop { bottom: initial; }
+    .hero-overlay h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-tagline {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
 
     .mobile-landscape { display: none; }
-
     .mobile { display: initial; }
 
-    /*.before-after { padding: 10px 20px; }*/
-
-    .before-wrapper, .after-wrapper {
-        display: initial;
-        padding: initial;
+    /* Welcome */
+    .welcome {
+        padding: 60px 20px 40px;
     }
 
-    img[src*="DOC"] {
-        width: 6%;
-        /*top: 7px;*/
+    .welcome-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .welcome-text p {
+        font-size: 1rem;
     }
 
     .photos {
-        display: grid;
-        padding: 20px;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
-    img[src*="DSC4266"], img[src*="DSC4279"] {
-        width: 100%;
-        margin: auto;
-        padding: 1%;
+    .photos img {
+        aspect-ratio: 3/2;
     }
 
-    /* Start of Before & After page */
-
-
-
-    .before-after {
-        grid-template-columns: initial;
-        grid-row-gap: 2%;
-        padding: 10px 10px 100px 10px;
+    .photos img:first-child {
+        margin-top: 0;
     }
 
-    .card { width: initial; }
+    /* Services */
+    .services {
+        padding: 60px 16px 80px;
+    }
 
-    .card2 { height: initial; }
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
 
-    /*.lightbox > img[src*="IMG_8742"] {*/
-    /*    width: initial;*/
-    /*    margin: initial;*/
-    /*}*/
+    .service-card {
+        padding: 20px 16px;
+    }
 
-    /* End of Before & After page */
+    .service-card-icon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
 
-    /* Start of Contact page */
+    .service-card h3 {
+        font-size: 0.85rem;
+    }
 
+    /* Image break */
+    .image-break {
+        height: 35vh;
+        min-height: 250px;
+    }
+
+    .image-break-text h2 {
+        font-size: 1.5rem;
+    }
+
+    /* CTA */
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-button {
+        padding: 14px 36px;
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+    }
+
+    /* Footer */
+    footer .footer-top {
+        padding: 40px 20px 20px;
+    }
+
+    .contact-info li {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    /* Contact page */
     .contact-2 { padding-bottom: 100px; }
 
-
-
-
-
-    /* End of Contact page */
+    /* Slideshow */
+    .mySlides { width: 100% !important; }
 }
 
 @media screen and (max-width: 400px) {
 
-    .container { grid-template-rows: 60px 221px auto auto; }
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
 
-    /*.before-after { padding: 10px 20px; }*/
-
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 375px) {
 
-    .container { grid-template-rows: 60px 211px auto auto; }
-
-    /*img[src*="DOC"] { top: 6px; }*/
+    .hero-overlay h1 {
+        font-size: 1.8rem;
+    }
 }
-
-/* --------------- End of Mobile responsiveness --------------- */
