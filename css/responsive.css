@@ -156,16 +156,11 @@
 
 @media screen and (max-width: 480px) {
 
-    /* Photos/project pages — push content below fixed nav */
+    /* Photos/project pages — flush to nav */
     .container > header {
-        height: auto;
-        min-height: auto;
-        padding-top: 240px;
-    }
-
-    .container > header > img {
-        width: 100%;
-        height: auto;
+        height: 30vh;
+        min-height: 200px;
+        padding-top: 0;
     }
 
     /* Coming Soon page */

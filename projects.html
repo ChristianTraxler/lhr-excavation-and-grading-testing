@@ -153,5 +153,15 @@
 
 		<a id="scrollUp" href="#pageTop" aria-label="Scroll to top"><img class="arrow2" src="./assets/images/arrow.svg" alt="" width="18" height="18" aria-hidden="true"></a>
 	</div>
+		<script>
+			document.querySelectorAll('.card').forEach(card => {
+				card.addEventListener('click', () => {
+					document.querySelectorAll('.card.tapped').forEach(c => {
+						if (c !== card) c.classList.remove('tapped');
+					});
+					card.classList.toggle('tapped');
+				});
+			});
+		</script>
 	</body>
 </html>

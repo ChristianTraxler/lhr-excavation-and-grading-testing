@@ -667,7 +667,6 @@ img[src*="mail"], img[src*="mobile"] {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 70px;
 }
 
 .container > nav[aria-label="Main navigation"] {
@@ -686,6 +685,17 @@ img[src*="mail"], img[src*="mobile"] {
     background: var(--dark);
     padding: 0 0 80px 0;
     flex: 1;
+    position: relative;
+}
+
+.before-after-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
 }
 
 .before-after-area h1 {
@@ -784,12 +794,21 @@ ul.breadcrumb li a:hover {
     background-size: 0% 3px, 3px 0%, 0% 3px, 3px 0%;
 }
 
-.card:hover::before,
-.card:active::before {
+@media (hover: hover) {
+    .card:hover::before {
+        animation: traceBorder 0.8s ease forwards;
+    }
+
+    .card:hover {
+        box-shadow: 0 4px 30px rgba(255, 69, 0, 0.2);
+    }
+}
+
+.card.tapped::before {
     animation: traceBorder 0.8s ease forwards;
 }
 
-.card:hover {
+.card.tapped {
     box-shadow: 0 4px 30px rgba(255, 69, 0, 0.2);
 }
 
