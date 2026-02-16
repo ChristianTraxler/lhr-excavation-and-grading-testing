@@ -2,7 +2,7 @@
    NAVIGATION
    ======================================== */
 
-nav {
+nav[aria-label="Main navigation"] {
     position: fixed;
     top: 0;
     left: 0;
@@ -667,9 +667,10 @@ img[src*="mail"], img[src*="mobile"] {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 70px;
 }
 
-.container > nav {
+.container > nav[aria-label="Main navigation"] {
     position: fixed;
     top: 0;
     left: 0;
