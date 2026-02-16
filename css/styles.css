@@ -327,14 +327,16 @@ header > img {
     transition: transform 0.4s ease;
 }
 
-.service-card:hover {
+.service-card:hover,
+.service-card:active {
     background: #3A3C3F;
     transform: translateY(-4px);
     border-color: rgba(255, 69, 0, 0.15);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
-.service-card:hover::before {
+.service-card:hover::before,
+.service-card:active::before {
     transform: scaleX(1);
 }
 
@@ -409,7 +411,7 @@ header > img {
 }
 
 .image-break-text p {
-    color: var(--gray);
+    color: var(--off-white);
     letter-spacing: 2px;
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -575,9 +577,9 @@ img[src*="mail"], img[src*="mobile"] {
    ======================================== */
 
 .arrow2 {
-    display: inline-block;
-    width: 70%;
-    position: relative;
+    display: block;
+    width: 18px;
+    height: 18px;
     filter: brightness(0) invert(1);
 }
 
@@ -585,19 +587,19 @@ img[src*="mail"], img[src*="mobile"] {
     background: var(--dark-card);
     border: 1px solid rgba(255, 255, 255, 0.08);
     color: var(--white);
-    font-size: var(--size-20);
     height: 40px;
     width: 40px;
-    line-height: var(--size-25);
     position: fixed;
     bottom: 20px;
     right: 20px;
-    text-align: center;
     border-radius: 6px;
     cursor: pointer;
     z-index: 100;
     transition: all 0.3s ease;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #scrollUp:hover {
