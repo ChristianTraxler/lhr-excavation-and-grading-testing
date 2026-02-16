@@ -248,6 +248,17 @@
 			});
 
 			document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+			// Tap to trigger orange line on service cards (mobile/tablet)
+			document.querySelectorAll('.service-card').forEach(card => {
+				card.addEventListener('click', () => {
+					// Remove tapped from any other card
+					document.querySelectorAll('.service-card.tapped').forEach(c => {
+						if (c !== card) c.classList.remove('tapped');
+					});
+					card.classList.toggle('tapped');
+				});
+			});
 		</script>
 	</body>
 </html>

@@ -328,7 +328,7 @@ header > img {
 }
 
 .service-card:hover,
-.service-card:active {
+.service-card.tapped {
     background: #3A3C3F;
     transform: translateY(-4px);
     border-color: rgba(255, 69, 0, 0.15);
@@ -336,7 +336,7 @@ header > img {
 }
 
 .service-card:hover::before,
-.service-card:active::before {
+.service-card.tapped::before {
     transform: scaleX(1);
 }
 
