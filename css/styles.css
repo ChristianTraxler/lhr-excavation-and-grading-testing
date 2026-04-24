@@ -820,11 +820,44 @@ ul.breadcrumb li a:hover {
     100% { background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%; }
 }
 
-.card img {
+.card img,
+.card video {
     border-radius: 4px;
     width: 100%;
     height: auto;
     display: block;
+}
+
+.videos-coming-soon {
+    max-width: 720px;
+    margin: 60px auto;
+    padding: 60px 30px;
+    text-align: center;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.videos-coming-soon h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 16px;
+    color: var(--accent);
+}
+
+.videos-coming-soon p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 12px;
+    opacity: 0.85;
+}
+
+.videos-coming-soon a {
+    color: var(--accent);
+    text-decoration: underline;
 }
 
 .card2 { height: 75%; }

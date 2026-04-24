@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/png" href="assets/images/LHR-Grading(2).png"/>
+		<title>Project Videos | LHR Excavation and Grading, LLC | Newton, NC</title>
+		<meta name="description" content="Watch project videos from LHR Excavation & Grading LLC in Newton, NC. See our work in land clearing, grading, tree removal, pond cleanup and more.">
+		<meta name="keywords" content="excavation videos, land clearing video, grading projects Newton NC, tree removal video, Catawba County excavation work">
+		<link rel="canonical" href="https://lhrexcavationandgrading.com/videos.html">
+
+		<meta property="og:title" content="Project Videos | LHR Excavation and Grading, LLC">
+		<meta property="og:description" content="Watch project videos from LHR Excavation & Grading LLC. Land clearing, grading, tree removal and more in Newton, NC.">
+		<meta property="og:image" content="https://lhrexcavationandgrading.com/assets/images/og-preview.png">
+		<meta property="og:url" content="https://lhrexcavationandgrading.com/videos.html">
+		<meta property="og:type" content="website">
+		<meta name="robots" content="index, follow">
+
+		<link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/responsive.css">
+	</head>
+	<body>
+	<div id="pageTop"></div>
+		<div class="container">
+		<nav aria-label="Main navigation">
+			<ul class="navbar-nav">
+				<li class="nav-link contact">
+					<a href="videos.html" aria-current="page">Videos</a>
+				</li>
+				<li class="nav-link contact">
+					<a href="projects.html">Photos</a>
+				</li>
+				<li class="nav-link">
+					<a href="index.html" aria-label="LHR Excavation and Grading home"><img src="assets/images/LHR-Grading(2).png" alt="LHR Excavation and Grading logo" width="60" height="60"></a>
+				</li>
+				<li class="nav-link contact">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<header>
+			<img src="assets/images/IMG_8756.JPG" class="desktop mobile" alt="LHR Excavation excavator clearing land" width="4032" height="3024" fetchpriority="high">
+			<img src="assets/images/DJI_20230822_153320_561.JPG" class="mobile-landscape" alt="Aerial view of LHR Excavation equipment" width="4000" height="3000">
+		</header>
+		<main class="before-after-area">
+			<div>
+				<h1>Videos</h1>
+			</div>
+
+			<!--
+			<div class="videos-coming-soon">
+				<h2>Videos Coming Soon</h2>
+				<p>We're putting together clips from recent land clearing, grading, tree removal and pond projects. Check back soon to see our equipment in action.</p>
+				<p>In the meantime, view our <a href="projects.html">project photos</a> or <a href="contact.html">get in touch</a> for a free estimate.</p>
+			</div>
+			-->
+
+			<div class="projects-wrapper">
+				<div class="before-after">
+					<div class="card">
+						<video controls preload="metadata" playsinline>
+							<source src="assets/videos/DJI_0178-web.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+
+					<div class="card">
+						<video controls preload="metadata" playsinline>
+							<source src="assets/videos/IMG_0752-web.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+
+					<div class="card">
+						<video controls preload="metadata" playsinline>
+							<source src="assets/videos/IMG_0754-web.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="bg-footer">
+			<section class="footer-top">
+				<div class="footer-col">
+					<div class="contact-info">
+						<ul>
+							<li><img src="./assets/images/mobile.svg" alt="" class="icons phone email" width="22" height="22" aria-hidden="true"><a
+								href="tel:+18284553152" class="tel">(+1) 828-455-3152</a>
+								<br><span class="inside">(Call/text)</span>
+							</li>
+							<li><img src="./assets/images/mail.svg" alt="" class="icons" width="22" height="22" aria-hidden="true"><a
+								href="mailto:LHRexcavationandgrading@gmail.com" class="email">LHRexcavationandgrading@gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="footer-bottom">
+				<div class="footer-bottom-wrapper">
+					<div class="copyright">
+						<p>
+							<a href="https://developerofcode.com" target="_blank" rel="noopener noreferrer" class="developer"><span>Built by</span><img
+								src="./assets/images/DOC_logo_3_logo_only_transparent-BG.gif"
+								alt="Developer Of Code, LLC's company logo" width="18" height="18"><span class="dev">Developer Of Code, LLC</span></a></p>
+					</div>
+				</div>
+			</section>
+		</footer>
+
+		<a id="scrollUp" href="#pageTop" aria-label="Scroll to top"><img class="arrow2" src="./assets/images/arrow.svg" alt="" width="18" height="18" aria-hidden="true"></a>
+	</div>
+		<script>
+			document.querySelectorAll('.card').forEach(card => {
+				card.addEventListener('click', () => {
+					document.querySelectorAll('.card.tapped').forEach(c => {
+						if (c !== card) c.classList.remove('tapped');
+					});
+					card.classList.toggle('tapped');
+				});
+			});
+
+			document.querySelectorAll('video').forEach(v => { v.volume = 0.2; });
+		</script>
+	</body>
+</html>
