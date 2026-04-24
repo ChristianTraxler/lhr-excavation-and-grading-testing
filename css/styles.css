@@ -26,6 +26,14 @@ nav[aria-label="Main navigation"] {
     height: 70px;
 }
 
+/* Invisible spacer after Contact balances Videos+Photos on the left
+   so the logo (3rd flex item) stays centered with equal gaps on both sides */
+.navbar-nav::after {
+    content: '';
+    flex: 0 0 auto;
+    width: 146px;
+}
+
 nav > ul > li { display: block; }
 
 nav > ul > li > a {
@@ -54,6 +62,111 @@ img[src*="LHR-Grading(2)"] {
 
 img[src*="LHR-Grading(2)"]:hover {
     transform: scale(1.1);
+}
+
+/* Mobile nav: hamburger toggle, overlay, slide-out drawer.
+   Hidden on desktop; responsive.css flips them on at ≤480px. */
+.nav-toggle {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    z-index: 110;
+}
+
+.nav-toggle-bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 5px auto;
+    background: var(--off-white);
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 99;
+}
+.nav-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nav-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100dvh;
+    width: min(300px, 82vw);
+    padding: 80px 0 24px;
+    background: rgba(30, 31, 33, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-left: 1px solid rgba(255, 69, 0, 0.15);
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 0.3s ease, visibility 0s linear 0.3s;
+    z-index: 105;
+    overflow-y: auto;
+}
+.nav-drawer.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.3s ease, visibility 0s linear 0s;
+}
+
+.nav-drawer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-drawer-list a {
+    display: block;
+    padding: 20px 32px;
+    color: var(--off-white);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition: color 0.2s ease, background 0.2s ease;
+}
+.nav-drawer-list a:hover,
+.nav-drawer-list a:focus-visible {
+    color: var(--accent);
+    background: rgba(255, 255, 255, 0.03);
+    outline: none;
+}
+.nav-drawer-list a[aria-current="page"] {
+    color: var(--accent);
+}
+
+body.nav-open {
+    overflow: hidden;
 }
 
 

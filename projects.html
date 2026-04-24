@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="css/default.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/responsive.css">
+		<script defer src="js/nav.js"></script>
 	</head>
 	<body>
 	<div id="pageTop"></div>
@@ -38,6 +39,19 @@
 					<a href="contact.html">Contact</a>
 				</li>
 			</ul>
+			<button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+				<span class="nav-toggle-bar" aria-hidden="true"></span>
+				<span class="nav-toggle-bar" aria-hidden="true"></span>
+				<span class="nav-toggle-bar" aria-hidden="true"></span>
+			</button>
+			<div class="nav-overlay" aria-hidden="true"></div>
+			<aside id="nav-drawer" class="nav-drawer" aria-hidden="true" aria-label="Mobile menu">
+				<ul class="nav-drawer-list">
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="projects.html" aria-current="page">Photos</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</aside>
 		</nav>
 
 		<header>

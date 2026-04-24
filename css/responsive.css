@@ -178,14 +178,13 @@
 
     .middle > p { padding: 20px 15px; }
 
-    /* Nav */
+    /* Nav — hamburger mode: hide text links, center logo, show toggle */
     .navbar-nav { height: 60px; }
 
-    .contact {
-        padding: 16px 20px;
-        font-size: 1rem;
-        letter-spacing: 1px;
-    }
+    .navbar-nav .contact { display: none; }
+    .navbar-nav::after { display: none; }
+
+    .nav-toggle { display: block; }
 
     /*img[src*="LHR-Grading(2)"] { width: 45px; }*/
 
